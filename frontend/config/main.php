@@ -22,8 +22,8 @@ return [
                 'port' => '465',
                 'smtpsecure' => 'ssl',
                 'smtpauth' => true,
-                'username' => '',
-                'password' => '',
+                'username' => 'testyii2',
+                'password' => 'testyii2lessons',
             ],
         ],
 
@@ -43,6 +43,11 @@ return [
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
+        ],
+    ],
+    'modules' => [
+        'main' => [
+            'class' => 'app\modules\main\Module',
         ],
     ],
     'params' => $params,
